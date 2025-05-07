@@ -45,10 +45,6 @@ nav ul {
     gap: 2rem;
 }
 
-nav li:hover {
-    border: 1px solid #ffff;
-}
-
 nav a {
     color: #ffff;
     text-decoration: none;
