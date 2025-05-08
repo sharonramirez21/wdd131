@@ -35,6 +35,10 @@ nav {
     padding: 0.50rem;
 }
 
+nav a:hover {
+    border: 1px solid #ffffff;
+}
+
 nav ul {
     display: flex;
     justify-content: space-evenly;
