@@ -103,6 +103,7 @@ main {
 }
 
 .card p {
+    font-family: "Tuffy", Arial;
     margin: 1rem;
     margin-inline-end: 1rem;
     margin-inline-start: 2rem;
@@ -131,6 +132,7 @@ main {
 }
 
 .card ul li {
+    font-family: "Cal Sans", sans-serif;
     padding-top: 0.5rem;
 }
 
