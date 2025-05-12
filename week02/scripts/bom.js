@@ -6,7 +6,7 @@ const li = document.createElement('li');
 const deleteButton = document.createElement('button');
 li.textContent = input.value;
 
-deleteButton.textContent = 'X';
+deleteButton.textContent = '❌';
 li.append(deleteButton);
 
 list.append(li);
