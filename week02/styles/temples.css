@@ -93,6 +93,16 @@ nav ul li a {
     font-family: 'Oswald', sans-serif;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
 nav ul li a:hover {
     background-color: #ffffff;
     color: #1B065E;
