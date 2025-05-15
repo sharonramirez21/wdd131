@@ -1,0 +1,41 @@
+@media screen and (min-width: 1000px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    header h1 {
+        padding-left: 2rem;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 4rem;
+        right: 0.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat( 3,1fr);
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+}
