@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WD131 - Country Page</title>
+    <meta name="description" content="Country Page Activity">
+    <meta name="Author" content="Sharon Ivon Ramirez">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-small.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>South Korea</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/place-small.webp">
+                <source media="(max-width: 900px)" srcset="images/place-medium.webp">
+                <source media="(min-width: 901px)" srcset="images/place-large.webp">
+                <img src="images/place-large.webp" alt="South Korea landscape">
+            </picture>
+            <div class="hero-divider"></div>
+
+            <section id="date" class="date overlay-left">
+                <h2>Date</h2>
+                <ul>
+                    <li><span class="label">Area</span><span class="value">100.210 km²</span></li>
+                    <li><span class="label">Population</span><span class="value">51,71 mill (2023)</span></li>
+                    <li><span class="label">Capital</span><span class="value">Seúl</span></li>
+                    <li><span class="label">Languages</span><span class="value">Korean</span></li>
+                    <li><span class="label">Currency</span><span class="value">South Korean won</span></li>
+                    <li><span class="label">Time Zone</span><span class="value">GMT+9</span></li>
+                    <li><span class="label">Calling Code</span><span class="value">+82</span></li>
+                    <li><span class="label">Internet TLD</span><span class="value">CO.KR</span></li>
+                </ul>
+            </section>
+
+            <section id="weather" class="weather overlay-right">
+                <h2>Weather<img src="images/watherimgg.svg" alt="Weather logo" id="logo"></h2>
+                <ul>
+                    <li><span class="label">Temperature</span><span id="temperature" class="value">10 °C</span></li>
+                    <li><span class="label">Conditions</span><span class="value">Clear</span></li>
+                    <li><span class="label">Wind</span><span id="wind" class="value">5 km/h</span></li>
+                    <li><span class="label">Wind Chill</span><span id="windChill" class="value">N/A</span></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span>😀 Sharon Ramirez 😀 Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
