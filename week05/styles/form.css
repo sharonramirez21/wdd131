@@ -61,6 +61,12 @@ main {
     max-width: 600px;
 }
 
+
+label span {
+    font-family: 'Tuffy', sans-serif;
+    font-weight: bold;
+}
+
 .overall {
     display: flex;
     flex-direction: row-reverse;
