@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0.60rem;
+    background-color: #31081F;
+    color: #ffff;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Cla sans', sans-serif;
+}
+
+main {
+    margin: 0;
+    padding: 0 2%;
+}
+
+/* From desing*/
+.rev fieldset {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 1rem 2%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.rev label,
+.rev label div,
+.rev label p {
+    font-family: 'Tuffy', serif;
+    padding: 0;
+    margin-bottom: 0.25rem; 
+}
+
+.rev div {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    font-family: 'Tuffy', serif;
+}
+
+.rev label {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.rev input[type='text'],
+.rev input[type='date'],
+.rev select {
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.overall {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.overall label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overall input[type='radio']{
+    display: inline-block;
+}
+
+.rev input[type="checkbox"] {
+    margin-right: .5rem;
+}
+
+.note {
+    padding-left: .2rem;
+    color: #BA1528;
+    font-style: oblique;
+    margin-bottom: 0.25rem;
+    font-weight: 400;
+    font-size: .85rem;
+    font-family: 'Tuffy', serif;
+}
+
+
+.rev input[type="submit"] {
+    width: 50%;
+    display: block;
+    margin: 1rem auto 0;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #31081F;
+    background-color: #523143;
+    color: #ffff;
+    font-family: 'Tuffy', sans-serif;
+    font-size: .9rem;
+}
+
+.rev input[type="submit"]:hover {
+    background-color: #31081F;
+}
+
+.rev input[type="submit"]:active {
+    transform: scale(0.98); 
+}
+
+footer {
+    font-family: 'Tuffy', sans-serif;
+    background-color: #31081F;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    padding: 0;
+    color: #ffff;
+}

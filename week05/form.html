@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form</title>
+    <meta name="description" content="WDD 131 - WEEK 05 - ProductReview Form">
+    <meta name="Author" content="Sharon Ivon Ramirez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-small.css">
+
+    <script src="scripts/form.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+
+    <main>
+        <form method="get" action="review.html" class="rev">
+            <fieldset>
+                <label><div>Product Name*</div>
+                    <select id="productName" name="subject" required>
+                        <option value="" disabled selected>Select a Product ... </option>
+
+                    </select>
+                </label>
+
+                <div>Overall Rating *</div>
+                <div class="overall">
+                    <label>☆☆☆☆☆<input type="radio" id="five" name="star" required></label>
+                    <label>☆☆☆☆<input type="radio" id="four" name="star" required></label>
+                    <label>☆☆☆<input type="radio" id="three" name="star" required></label>
+                    <label>☆☆<input type="radio" id="two" name="star" required></label>
+                    <label>☆<input type="radio" id="one" name="star" required></label>
+                </div>
+
+                <label><div>Date of Installation *</div><input type="date" id="dateInst" name="CompleteDate" required></label>
+
+                <div><span>Which features did you find useful in the product?</span><span class="note">(Check all that apply)</span></div>              
+                <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="use" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="desing" value="yes">Desing</label>
+
+                <label><div><span>Written Review</span><span class="note">(Optional)</span></div><input type="text" id="wr-review" name="review"></label>
+
+                <label><div><span>Your Name</span><span class="note">(Optional)</span></div><input type="text" id="name" name="yourname"></label>
+
+                <input type="submit" value="Send Review">
+            </fieldset>
+        </form>
+    </main>
+
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span>😀 Sharon Ramirez 😀 Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

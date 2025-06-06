@@ -1,0 +1,81 @@
+@media screen and (max-width: 500px) { 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .rev {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .rev fieldset {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .rev label,
+    .rev .overall,
+    .rev div,
+    .rev p {
+        margin-left: .2rem;
+        margin-bottom: 1rem;
+    }
+
+    .rev input[type='text'],
+    .rev input[type='date'],
+    .rev select {
+        display: block;
+        padding: .5rem;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .overall {
+        display: flex;
+        gap: 1rem;
+        padding-top: .5rem;
+    }
+
+    .overall label{
+        max-width: 80px;
+        font-size: 1rem;
+        padding-left: -1rem;
+    }
+
+    .overall input[type='radio'] {
+        width: 16px; 
+        height: 14px;
+        margin-top: 0.3rem;
+    }
+
+    .rev input[type="checkbox"] {
+        margin-right: .3rem;
+        margin-left: .5rem;
+    }
+
+
+    .rev input[type="submit"] {
+        border: 2px solid #31081F;
+        width: 60%;
+        background: linear-gradient(to right, #664456, #31081F);
+    }
+
+    .rev input[type="submit"]:hover {
+        background: linear-gradient(to right, #31081F, #664456);   
+    }
+
+    .rev input[type="submit"]:active {
+        border-color: #6b475a; 
+    }
+
+}
