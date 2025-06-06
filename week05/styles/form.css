@@ -41,7 +41,6 @@ main {
 }
 
 .rev div {
-    font-weight: 600;
     padding: 0;
     margin: 0;
     font-family: 'Tuffy', serif;
@@ -50,6 +49,7 @@ main {
 .rev label {
     display: block;
     padding-bottom: 1rem;
+    font-weight: bold;
 }
 
 .rev input[type='text'],
@@ -61,6 +61,10 @@ main {
     max-width: 600px;
 }
 
+.selection {
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
 
 label span {
     font-family: 'Tuffy', sans-serif;
@@ -75,6 +79,7 @@ label span {
 }
 
 .overall label {
+    margin-top: -0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,8 +89,13 @@ label span {
     display: inline-block;
 }
 
-.rev input[type="checkbox"] {
+.rev input[type='checkbox'] {
     margin-right: .5rem;
+    margin-top: .8rem;
+}
+
+.checkbox-group label {
+    font-weight: normal;
 }
 
 .note {
