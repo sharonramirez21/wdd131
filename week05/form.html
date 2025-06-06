@@ -26,7 +26,8 @@
     <main>
         <form method="get" action="review.html" class="rev">
             <fieldset>
-                <label><div>Product Name*</div>
+                <div>Product Name*</div>
+                <label>
                     <select id="productName" name="subject" required>
                         <option value="" disabled selected>Select a Product ... </option>
 
@@ -42,7 +43,8 @@
                     <label>☆<input type="radio" id="one" name="star" required></label>
                 </div>
 
-                <label>Date of Installation *<input type="date" id="dateInst" name="CompleteDate" required></label>
+                <div>Date of Installation *</div>
+                <label><input type="date" id="dateInst" name="CompleteDate" required></label>
 
                 <div><span>Which features did you find useful in the product?</span><span class="note">(Check all that apply)</span></div>              
                 <label><input type="checkbox" name="durability" value="yes">Durability</label>
