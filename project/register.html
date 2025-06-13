@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - FINAL PROJECT</title>
+    <meta name="description" content="Final Project - WDD 131 Course Page">
+    <meta name="Author" content=" Sharon Ivon Ramirez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/final-project.css">
+    <link rel="stylesheet" href="style/final-project.large.css" media="screen and (min-width: 601px)">
+
+    <script src="scripts/final-project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+        <button type="button" id="menu" aria-label="open menu"></button>
+        <nav>
+            <ul>
+                <li><a href="final-project.html" id="nav-home">Home</a></li>
+                <li><a href="cities.html" id="nav-cities">Cities</a></li>
+                <li><a href="historic-places.html" id="nav-historic">Historic Places</a></li>
+                <li><a href="register.html" id="nav-register">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <section class="title">
+            <picture>
+                <source srcset="image/japan-overlay.webp" media="(min-width: 1024px)">
+                <source srcset="image/japan-medium.webp" media="(min-width: 600px)">
+                <img src="image/japan-small.webp" alt="Scenery of Japan" loading="lazy">
+            </picture>
+            <div class="overlay">
+                <h2>Sign up</h2>
+                <p>Sign up to get more information about this topic.</p>
+            </div>
+        </section>
+
+        <form method="get" action="sing-up.html" class="japan-form">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Birthdate* <input type="date" name="CompleteDate" required></label>
+                <label>Phone <span>(optional)</span><input type="tel" name="phone" placeholder="1235551234"></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Username* <input type="text" id="username" name="username" required></label>
+                <label>Password* <input type="password" id="password" name="password" required></label>
+                <label>Confirm password* <input type="password" id="confirm-password" name="password" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Your interest</legend>
+                <label for="interest">Select your interest:
+                    <select id="interest" name="interest" required>
+                        <option value="" disabled selected>--Choose interest-- </option>
+                        <option value="culture">Japanese Culture</option>
+                        <option value="history">History</option>
+                        <option value="travel">Travel & Tourism</option>
+                        <option value="language">Japanese Language</option>
+                    </select>
+                </label>
+                <label>Comments or suggestions: <span>(optional)</span>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Write your ideas here..."></textarea>
+                </label>
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </fieldset>
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span>😀 Sharon Ramirez 😀 Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>

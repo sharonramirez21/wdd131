@@ -1,0 +1,16 @@
+@media screen and (min-width: 601px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav a:focus,
+    nav a:active {
+        background-color: #fff;
+        color: #c94c65;
+        outline: none; 
+    }
+}

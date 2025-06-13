@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - FINAL PROJECT</title>
+    <meta name="description" content="Final Project - WDD 131 Course Page">
+    <meta name="Author" content=" Sharon Ivon Ramirez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/final-project.css">
+    <link rel="stylesheet" href="style/final-project.large.css" media="screen and (min-width: 601px)">
+
+    <script src="scripts/final-project.js" defer></script>
+    <script src="scripts/sing-up.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+        <button type="button" id="menu" aria-label="open menu"></button>
+        <nav>
+            <ul>
+                <li><a href="final-project.html" id="nav-home">Home</a></li>
+                <li><a href="cities.html" id="nav-cities">Cities</a></li>
+                <li><a href="historic-places.html" id="nav-historic">Historic Places</a></li>
+                <li><a href="register.html" id="nav-register">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <section class="title">
+            <picture>
+                <source srcset="image/japan-overlay.webp" media="(min-width: 1024px)">
+                <source srcset="image/japan-medium.webp" media="(min-width: 600px)">
+                <img src="image/japan-small.webp" alt="Scenery of Japan" loading="lazy">
+            </picture>
+            <div class="overlay">
+                <h2>Thank you for sing up!</h2>
+                <p>We're excited to have you on board.</p>
+                <div>You have sing up <span id="reviewCount">0</span> time(s).</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span>😀 Sharon Ramirez 😀 Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - FINAL PROJECT</title>
+    <meta name="description" content="Final Project - WDD 131 Course Page">
+    <meta name="Author" content=" Sharon Ivon Ramirez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/final-project.css">
+    <link rel="stylesheet" href="style/final-project.large.css" media="screen and (min-width: 601px)">
+
+    <script src="scripts/final-project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+        <button type="button" id="menu" aria-label="open menu"></button>
+        <nav>
+            <ul>
+                <li><a href="final-project.html" id="nav-home">Home</a></li>
+                <li><a href="cities.html" id="nav-cities">Cities</a></li>
+                <li><a href="historic-places.html" id="nav-historic">Historic Places</a></li>
+                <li><a href="register.html" id="nav-register">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <section class="title">
+            <picture>
+                <source srcset="image/japan-overlay.webp" media="(min-width: 1024px)">
+                <source srcset="image/japan-medium.webp" media="(min-width: 600px)">
+                <img src="image/japan-small.webp" alt="Scenery of Japan" loading="lazy">
+            </picture>
+            <div class="overlay">
+                <h2>Cites</h2>
+                <p>Discover Japan's most captivating cities — each with its own unique culture, history, and charm.</p>
+            </div>
+        </section>
+
+        <section class="about" id="tokyo">
+            <h2>Tokyo</h2>
+            <div class="content-about">
+                <div class="text-about">
+                    <p>Tokyo is Japan's bustling capital city, famous for its skyscrapers, cutting-edge technology, vibrant culture, and delicious cuisine. It perfectly blends the ultramodern with traditional temples and gardens, making it a fascinating destination for visitors.</p>
+                    <h3>Culture</h3>
+                    <p>Tokyo's culture is a unique mix of traditional customs and modern lifestyle. People respect politeness and order, and festivals like cherry blossom viewing (hanami) are very popular. The city is known for its fashion, technology, cuisine (like sushi and ramen), and a deep appreciation for art, anime, and pop culture. Despite being fast-paced, Tokyo maintains strong cultural traditions that honor respect, harmony, and community.</p>
+                </div>
+                <figure>
+                    <img src="image/tokyo.webp" alt="Tokyo, Japan" loading="lazy">
+                    <figcaption>Tokyo, Japan</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="about" id="osaka">
+            <h2>Osaka</h2>
+            <div class="content-about">
+                <div class="text-about">
+                    <p>Osaka is Japan's third-largest city, famous for its vibrant atmosphere, rich history, and delicious food. It's a major economic hub with bustling shopping districts, historic landmarks like Osaka Castle, and lively entertainment areas. Known for its friendly locals and fun-loving spirit, Osaka combines modern urban life with traditional culture, making it a dynamic and welcoming city.</p>
+                    <h3>Culture</h3>
+                    <p>Osaka's culture is known for its friendly and outgoing people, often called the “nation's kitchen” due to its famous food culture. The city is lively, with a strong sense of humor and love for comedy. Traditional festivals like the Tenjin Matsuri celebrate Osaka's rich history. Osaka also values craftsmanship, street food (like takoyaki and okonomiyaki), and a warm, welcoming community spirit.</p>
+                </div>
+                <figure>
+                    <img src="image/osaka.webp" alt="Osaka, Japan" loading="lazy">
+                    <figcaption>Osaka, Japan</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span>😀 Sharon Ramirez 😀 Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
